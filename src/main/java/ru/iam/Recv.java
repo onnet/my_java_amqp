@@ -21,7 +21,6 @@ public class Recv {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
-        // Just in case exchange and queue not declared and bound yet
         channel.exchangeDeclare("zbrt", "topic", true);
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
         channel.queueBind(QUEUE_NAME, "zbrt", "esb");
