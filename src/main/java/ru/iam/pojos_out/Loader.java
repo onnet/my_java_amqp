@@ -24,7 +24,7 @@ public class Loader {
         mLoaderName = loaderName;
     }
 
-    @JsonProperty("loader_syncid")
+
     public String getLoaderSyncid() {
         return mLoaderSyncid;
     }

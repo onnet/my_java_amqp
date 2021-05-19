@@ -1,8 +1,8 @@
-
 package ru.iam.pojos;
 
 import javax.annotation.Generated;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.google.gson.annotations.SerializedName;
 
@@ -11,25 +11,20 @@ public class SkudEvent {
     @SerializedName("action")
     private String mAction;
     @SerializedName("App-Name")
-    @JacksonXmlProperty(localName = "App-Name")
     private String mAppName;
     @SerializedName("App-Version")
-    @JacksonXmlProperty(localName = "App-Version")
     private String mAppVersion;
     @SerializedName("ClassId")
-    @JacksonXmlProperty(localName = "ClassId")
     private Long mClassId;
     @SerializedName("Data")
     private Data mData;
     @SerializedName("Event-Category")
-    @JacksonXmlProperty(localName = "Event-Category")
     private String mEventCategory;
     @SerializedName("Event-Name")
     private String mEventName;
     @SerializedName("Msg-ID")
     private String mMsgID;
     @SerializedName("Node")
-    @JacksonXmlProperty(localName = "Node")
     private String mNode;
 
     public String getAction() {
@@ -40,6 +35,8 @@ public class SkudEvent {
         mAction = action;
     }
 
+    @JsonProperty("App-Name")
+    @JacksonXmlProperty(localName = "App-Name")
     public String getAppName() {
         return mAppName;
     }
@@ -48,6 +45,8 @@ public class SkudEvent {
         mAppName = appName;
     }
 
+    @JsonProperty("App-Version")
+    @JacksonXmlProperty(localName = "App-Version")
     public String getAppVersion() {
         return mAppVersion;
     }
@@ -56,6 +55,7 @@ public class SkudEvent {
         mAppVersion = appVersion;
     }
 
+    @JacksonXmlProperty(localName = "ClassId")
     public Long getClassId() {
         return mClassId;
     }
@@ -72,6 +72,8 @@ public class SkudEvent {
         mData = data;
     }
 
+    @JsonProperty("Event-Category")
+    @JacksonXmlProperty(localName = "Event-Category")
     public String getEventCategory() {
         return mEventCategory;
     }
@@ -80,6 +82,8 @@ public class SkudEvent {
         mEventCategory = eventCategory;
     }
 
+    @JsonProperty("Event-Name")
+    @JacksonXmlProperty(localName = "Event-Name")
     public String getEventName() {
         return mEventName;
     }
@@ -88,6 +92,8 @@ public class SkudEvent {
         mEventName = eventName;
     }
 
+    @JsonProperty("Msg-ID")
+    @JacksonXmlProperty(localName = "Msg-ID")
     public String getMsgID() {
         return mMsgID;
     }
@@ -96,6 +102,7 @@ public class SkudEvent {
         mMsgID = msgID;
     }
 
+    @JacksonXmlProperty(localName = "Node")
     public String getNode() {
         return mNode;
     }
