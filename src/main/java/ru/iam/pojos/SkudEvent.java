@@ -64,6 +64,7 @@ public class SkudEvent {
         mClassId = classId;
     }
 
+    @JacksonXmlProperty(localName = "Data")
     public Data getData() {
         return mData;
     }

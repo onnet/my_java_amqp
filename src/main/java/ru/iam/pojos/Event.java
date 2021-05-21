@@ -2,6 +2,8 @@
 package ru.iam.pojos;
 
 import javax.annotation.Generated;
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.google.gson.annotations.SerializedName;
 
 public class Event {
@@ -53,6 +55,7 @@ public class Event {
     @SerializedName("ZoneAddress")
     private String mZoneAddress;
 
+    @JacksonXmlProperty(localName = "AccessPointId")
     public String getAccessPointId() {
         return mAccessPointId;
     }
@@ -61,6 +64,7 @@ public class Event {
         mAccessPointId = accessPointId;
     }
 
+    @JacksonXmlProperty(localName = "AccessPointName")
     public String getAccessPointName() {
         return mAccessPointName;
     }
@@ -69,6 +73,7 @@ public class Event {
         mAccessPointName = accessPointName;
     }
 
+    @JacksonXmlProperty(localName = "AccessZoneId")
     public String getAccessZoneId() {
         return mAccessZoneId;
     }
@@ -77,6 +82,7 @@ public class Event {
         mAccessZoneId = accessZoneId;
     }
 
+    @JacksonXmlProperty(localName = "BirthDate")
     public String getBirthDate() {
         return mBirthDate;
     }
@@ -85,6 +91,7 @@ public class Event {
         mBirthDate = birthDate;
     }
 
+    @JacksonXmlProperty(localName = "CardNo")
     public String getCardNo() {
         return mCardNo;
     }
@@ -93,6 +100,7 @@ public class Event {
         mCardNo = cardNo;
     }
 
+    @JacksonXmlProperty(localName = "ComPortNumber")
     public String getComPortNumber() {
         return mComPortNumber;
     }
@@ -101,6 +109,7 @@ public class Event {
         mComPortNumber = comPortNumber;
     }
 
+    @JacksonXmlProperty(localName = "ComputerId")
     public String getComputerId() {
         return mComputerId;
     }
@@ -109,6 +118,7 @@ public class Event {
         mComputerId = computerId;
     }
 
+    @JacksonXmlProperty(localName = "Description")
     public String getDescription() {
         return mDescription;
     }
@@ -117,6 +127,7 @@ public class Event {
         mDescription = description;
     }
 
+    @JacksonXmlProperty(localName = "DevAddress")
     public String getDevAddress() {
         return mDevAddress;
     }
@@ -125,6 +136,7 @@ public class Event {
         mDevAddress = devAddress;
     }
 
+    @JacksonXmlProperty(localName = "EventDate")
     public String getEventDate() {
         return mEventDate;
     }
@@ -133,6 +145,7 @@ public class Event {
         mEventDate = eventDate;
     }
 
+    @JacksonXmlProperty(localName = "EventId")
     public String getEventId() {
         return mEventId;
     }
@@ -141,6 +154,7 @@ public class Event {
         mEventId = eventId;
     }
 
+    @JacksonXmlProperty(localName = "EventTypeId")
     public String getEventTypeId() {
         return mEventTypeId;
     }
@@ -149,6 +163,7 @@ public class Event {
         mEventTypeId = eventTypeId;
     }
 
+    @JacksonXmlProperty(localName = "FirstName")
     public String getFirstName() {
         return mFirstName;
     }
@@ -157,6 +172,7 @@ public class Event {
         mFirstName = firstName;
     }
 
+    @JacksonXmlProperty(localName = "ItemType")
     public String getItemType() {
         return mItemType;
     }
@@ -165,6 +181,7 @@ public class Event {
         mItemType = itemType;
     }
 
+    @JacksonXmlProperty(localName = "LastName")
     public String getLastName() {
         return mLastName;
     }
@@ -173,6 +190,7 @@ public class Event {
         mLastName = lastName;
     }
 
+    @JacksonXmlProperty(localName = "MiddleName")
     public String getMiddleName() {
         return mMiddleName;
     }
@@ -181,6 +199,7 @@ public class Event {
         mMiddleName = middleName;
     }
 
+    @JacksonXmlProperty(localName = "PKUAddress")
     public String getPKUAddress() {
         return mPKUAddress;
     }
@@ -189,6 +208,7 @@ public class Event {
         mPKUAddress = pKUAddress;
     }
 
+    @JacksonXmlProperty(localName = "PassMode")
     public String getPassMode() {
         return mPassMode;
     }
@@ -197,6 +217,7 @@ public class Event {
         mPassMode = passMode;
     }
 
+    @JacksonXmlProperty(localName = "PersonId")
     public String getPersonId() {
         return mPersonId;
     }
