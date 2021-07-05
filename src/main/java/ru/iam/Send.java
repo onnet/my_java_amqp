@@ -17,7 +17,7 @@ public class Send {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("10.220.16.30");
+        factory.setHost("10.110.21.21");
 
         try (Connection connection = factory.newConnection();
             Channel channel = connection.createChannel()) {
