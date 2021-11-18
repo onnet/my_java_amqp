@@ -12,7 +12,7 @@ import ru.iam.pojos.SkudEvent;
 
 public class Recv {
 
-    private final static String QUEUE_NAME = "my_java_recv_esb";
+    private final static String QUEUE_NAME = "recv_msg_for_tos";
 
     public static void main(String[] argv) throws Exception {
 
@@ -22,8 +22,8 @@ public class Recv {
         Channel channel = connection.createChannel();
 
         channel.exchangeDeclare("zbrt", "topic", true);
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        channel.queueBind(QUEUE_NAME, "zbrt", "esb");
+        channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+        channel.queueBind(QUEUE_NAME, "zbrt", "tos");
 
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
